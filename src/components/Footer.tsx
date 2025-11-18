@@ -1,72 +1,63 @@
-import React from 'react'
-import { Smartphone, Facebook, Twitter, Instagram, Youtube } from 'lucide-react'
+import { Github, Twitter, Linkedin } from 'lucide-react'
 
-const Footer = () => {
+export default function Footer() {
   return (
-    <footer className="bg-muted/30 pt-16 pb-8">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+    <footer className="border-t border-white/10 py-12 px-6">
+      <div className="max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-4 gap-8 mb-12">
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <Smartphone className="w-8 h-8 text-accent" />
-              <span className="text-2xl font-bold text-gradient">MobileHub</span>
-            </div>
-            <p className="text-muted-foreground mb-4">
-              Your trusted destination for premium smartphones and mobile devices.
-            </p>
-            <div className="flex gap-4">
-              <a href="#" className="p-2 glass rounded-lg hover:bg-white/20 transition-colors">
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a href="#" className="p-2 glass rounded-lg hover:bg-white/20 transition-colors">
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a href="#" className="p-2 glass rounded-lg hover:bg-white/20 transition-colors">
-                <Instagram className="w-5 h-5" />
-              </a>
-              <a href="#" className="p-2 glass rounded-lg hover:bg-white/20 transition-colors">
-                <Youtube className="w-5 h-5" />
-              </a>
-            </div>
-          </div>
-          
-          <div>
-            <h3 className="font-bold text-lg mb-4">Shop</h3>
+            <h3 className="font-bold text-lg mb-4">Product</h3>
             <ul className="space-y-2 text-muted-foreground">
-              <li><a href="#" className="hover:text-accent transition-colors">All Products</a></li>
-              <li><a href="#" className="hover:text-accent transition-colors">New Arrivals</a></li>
-              <li><a href="#" className="hover:text-accent transition-colors">Best Sellers</a></li>
-              <li><a href="#" className="hover:text-accent transition-colors">Special Offers</a></li>
+              <li><a href="#" className="hover:text-foreground transition-colors">Features</a></li>
+              <li><a href="#" className="hover:text-foreground transition-colors">Pricing</a></li>
+              <li><a href="#" className="hover:text-foreground transition-colors">Security</a></li>
+              <li><a href="#" className="hover:text-foreground transition-colors">Roadmap</a></li>
             </ul>
           </div>
-          
-          <div>
-            <h3 className="font-bold text-lg mb-4">Support</h3>
-            <ul className="space-y-2 text-muted-foreground">
-              <li><a href="#" className="hover:text-accent transition-colors">Contact Us</a></li>
-              <li><a href="#" className="hover:text-accent transition-colors">FAQs</a></li>
-              <li><a href="#" className="hover:text-accent transition-colors">Shipping Info</a></li>
-              <li><a href="#" className="hover:text-accent transition-colors">Returns</a></li>
-            </ul>
-          </div>
-          
           <div>
             <h3 className="font-bold text-lg mb-4">Company</h3>
             <ul className="space-y-2 text-muted-foreground">
-              <li><a href="#" className="hover:text-accent transition-colors">About Us</a></li>
-              <li><a href="#" className="hover:text-accent transition-colors">Careers</a></li>
-              <li><a href="#" className="hover:text-accent transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-accent transition-colors">Terms of Service</a></li>
+              <li><a href="#" className="hover:text-foreground transition-colors">About</a></li>
+              <li><a href="#" className="hover:text-foreground transition-colors">Blog</a></li>
+              <li><a href="#" className="hover:text-foreground transition-colors">Careers</a></li>
+              <li><a href="#" className="hover:text-foreground transition-colors">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-bold text-lg mb-4">Resources</h3>
+            <ul className="space-y-2 text-muted-foreground">
+              <li><a href="#" className="hover:text-foreground transition-colors">Documentation</a></li>
+              <li><a href="#" className="hover:text-foreground transition-colors">Help Center</a></li>
+              <li><a href="#" className="hover:text-foreground transition-colors">API Reference</a></li>
+              <li><a href="#" className="hover:text-foreground transition-colors">Community</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-bold text-lg mb-4">Legal</h3>
+            <ul className="space-y-2 text-muted-foreground">
+              <li><a href="#" className="hover:text-foreground transition-colors">Privacy</a></li>
+              <li><a href="#" className="hover:text-foreground transition-colors">Terms</a></li>
+              <li><a href="#" className="hover:text-foreground transition-colors">Cookie Policy</a></li>
+              <li><a href="#" className="hover:text-foreground transition-colors">Licenses</a></li>
             </ul>
           </div>
         </div>
         
-        <div className="border-t border-muted pt-8 text-center text-muted-foreground">
-          <p>&copy; 2025 MobileHub. All rights reserved.</p>
+        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-muted-foreground">© 2024 YourCompany. All rights reserved.</p>
+          <div className="flex gap-4">
+            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+              <Twitter className="w-5 h-5" />
+            </a>
+            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+              <Github className="w-5 h-5" />
+            </a>
+            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+              <Linkedin className="w-5 h-5" />
+            </a>
+          </div>
         </div>
       </div>
     </footer>
   )
 }
-
-export default Footer

@@ -1,24 +1,20 @@
-import React from 'react'
-import Header from './components/Header'
 import Hero from './components/Hero'
-import FeaturedProducts from './components/FeaturedProducts'
-import Benefits from './components/Benefits'
-import SpecialOffer from './components/SpecialOffer'
-import Newsletter from './components/Newsletter'
+import Features from './components/Features'
+import Testimonials from './components/Testimonials'
+import CTA from './components/CTA'
 import Footer from './components/Footer'
 
 function App() {
   return (
-    <div className="min-h-screen">
-      <Header />
-      <main>
+    <div className="min-h-screen bg-background overflow-hidden">
+      <div className="fixed inset-0 bg-gradient-radial from-primary/20 via-background to-background pointer-events-none" />
+      <div className="relative z-10">
         <Hero />
-        <FeaturedProducts />
-        <Benefits />
-        <SpecialOffer />
-        <Newsletter />
-      </main>
-      <Footer />
+        <Features />
+        <Testimonials />
+        <CTA />
+        <Footer />
+      </div>
     </div>
   )
 }
